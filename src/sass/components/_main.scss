@@ -3,6 +3,7 @@ body {
   background-color: $background-main-light;
 }
 .container {
+  outline: 1px solid green;
   min-width: 320px;
   padding: 0 15px;
   margin-left: auto;
