@@ -1,0 +1,81 @@
+.header {
+  background-color: grey;
+  height: 64px;
+  padding-top: 16px;
+  @include tablet {
+    height: 100px;
+    padding-top: 24px;
+  }
+  &-container {
+    display: flex;
+
+    align-items: center;
+  }
+  & .logo {
+    @include font(36px, null, null, null);
+    color: $color-logo-light;
+    margin-right: 52px;
+    @include tablet {
+      @include font(40px, null, null, null);
+      margin-right: 87px;
+    }
+  }
+  &__nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    @include tablet {
+      gap: 72px;
+    }
+  }
+  &__block {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    @include tablet {
+      gap: 32px;
+    }
+  }
+  &__text {
+    @include font(16px, 1.25, 500, 0.02em);
+    color: $color-text-links;
+    @include tablet {
+      @include font(20px, 1.2, 500, 0.02em);
+    }
+  }
+  .tel-block {
+    @include tablet {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 8px 10px 14px;
+      border: 1px solid rgba(243, 198, 83, 0.7);
+      border-radius: 2px;
+    }
+    .header__tel ~ .header__tel {
+      margin-left: 16px;
+    }
+  }
+  &__tel {
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
+    @include font(14px, 1.21, 400, 0.02em);
+    color: $color-title-light;
+  }
+
+  &-sosial {
+    @media screen and (max-width: 1279px) {
+      display: none;
+    }
+  }
+}
+.icon-tel {
+  @media screen and (max-width: 1279px) {
+    width: 12px;
+    height: 20px;
+    margin-right: 8px;
+  }
+}
