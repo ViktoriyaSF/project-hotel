@@ -8,7 +8,7 @@
   }
   &-container {
     display: flex;
-
+    justify-content: space-between;
     align-items: center;
   }
   & .logo {
@@ -17,7 +17,7 @@
     margin-right: 52px;
     @include tablet {
       @include font(40px, null, null, null);
-      margin-right: 87px;
+      margin-right: 76px;
     }
   }
   &__nav {
