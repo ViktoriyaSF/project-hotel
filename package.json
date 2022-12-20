@@ -2,7 +2,7 @@
   "name": "project-hotel",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://ViktoriyaSF.github.io/project-hotel",
+  "homepage": "https://ViktoriyaSF.github.io/project-hotel/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /project-hotel/"
